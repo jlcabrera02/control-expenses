@@ -10,7 +10,6 @@ const InputExpenses = () => {
   const credito = localStorage.getItem("credito");
   div.innerHTML = "";
 
-  console.log(!credito);
   if (!credito) {
     p.textContent = "Agregar dinero disponible";
     input.placeholder = "dinero disponible";
@@ -33,7 +32,6 @@ const InputExpenses = () => {
     div.appendChild(p);
     div.appendChild(btn);
   }
-  console.log(div);
   return div;
 };
 
